@@ -31,8 +31,6 @@ export default class NavbarLinks extends Component {
   }
 
   render() {
-    {window.innerWidth < 768 ? console.log('<NavbarIcons/>'): console.log('null')}
-    
     
     return (
       <LinkWrapper open={this.props.navbarOpen}>
