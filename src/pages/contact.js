@@ -1,20 +1,15 @@
 import React from "react"
 import styled from 'styled-components'
 // import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+const ContactPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Contact" keywords={[`gatsby`, `application`, `react`]} />
+    <h1>Hello from ContactPage</h1>
   </Layout>
 )
 
-const ButtonWrapper = styled.button`
-background:var(--mainOrange);
-color: orange;
-`
-
-export default IndexPage
+export default ContactPage
