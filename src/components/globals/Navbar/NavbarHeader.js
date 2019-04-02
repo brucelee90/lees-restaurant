@@ -32,7 +32,7 @@ const HeaderWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   .toggle-icon {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     cursor: pointer;
     color: ${styles.colors.primaryColor};
   }

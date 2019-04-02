@@ -15,17 +15,17 @@ export default class NavbarLinks extends Component {
       {
         id: 1,
         path: '/about',
-        name: 'about'
+        name: 'über'
       },
       {
         id: 2,
         path: '/menu',
-        name: 'menu'
+        name: 'karte'
       },
       {
         id: 3,
         path: '/contact',
-        name: 'contact'
+        name: 'reservieren'
       }
     ]
   }
@@ -59,7 +59,7 @@ const LinkWrapper = styled.ul`
 li{
   list-style-type: none;
   text-decoration: none;
-  width:5rem;
+  min-width:5rem; */
 }
 .nav-link{
   display:block;
@@ -97,9 +97,17 @@ const LinkBorder = styled.div`
   text-decoration: none;
   transition: ${styles.transDefault};
   width:1.5rem;
+  overflow: visible;
+  @media (min-width:768px){
+    width:25%;
+  }
+  
 
   &:hover{
-    width:4rem;
+    @media (min-width:768px){
+    width:100%;
+    }
+    width:6rem;
     cursor:pointer;
   }
 }

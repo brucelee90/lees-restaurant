@@ -4,11 +4,16 @@ import styled from 'styled-components'
 import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
+import {PageHeader, Banner} from '../utils'
+import img from '../images/bcg/menuBcg.jpeg'
 
 const MenuPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hello from MenuPage</h1>
+    <PageHeader img={img}>
+      <Banner title="unsere karte" subtitle="100% handmade with love"/>
+    </PageHeader>
+    
   </Layout>
 )
 

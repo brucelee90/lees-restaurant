@@ -11,11 +11,13 @@ import PropTypes from "prop-types"
 import Header from "./header"
 import "./layout.css"
 import Navbar from '../components/globals/Navbar'
+import Footer from '../components/globals/Footer/Footer'
 
 const Layout = ({ children }) => {
   return <>
   <Navbar/>
-  {children}
+    {children}
+  <Footer />
   </>
 }
 
