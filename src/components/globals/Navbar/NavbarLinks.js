@@ -45,6 +45,7 @@ export default class NavbarLinks extends Component {
                   <LinkBorder>
                     {item.name}
                   </LinkBorder>
+                  <div className="underline"></div>
                 </Link>
               </li>
             )
