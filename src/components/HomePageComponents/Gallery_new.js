@@ -32,12 +32,11 @@ export default function Gallery() {
                 <Section>
                     <GalleryWrapper>
                         {images.map(({node}, index ) => {
-                            return( <div key={index} className={`item-${index+1}`}>
+                            return( <div key={index} className={`item item-${index+1}`}>
                                 <Img fluid={node.childImageSharp.fluid} />
                                 <p className="info">awesome pizza</p>
                             </div> )
                         })}
-                        <h1>Test</h1>
                     </GalleryWrapper>
                 </Section>
             )

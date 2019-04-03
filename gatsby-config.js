@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Lee's Restaurant`,
@@ -16,6 +20,16 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        // API KEYS NIE ÖFFENTLICH ANZEIGEN!
+        // Environment Variablen müssen hier verwendet werden.
+        // !! Für Produktionsumgebung müssen Variablen in Netlify eingetragen werden
+        spaceId: process.env.SPACE_ID,
+        accessToken: process.env.ACCESS_TOKEN,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
