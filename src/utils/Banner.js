@@ -20,7 +20,7 @@ text-align:center;
     color:${styles.colors.mainWhite};
     font-size: 2.5rem;
     text-transform:uppercase;
-    ${styles.letterSpacing({spacing:'.2rem'})}
+    /* ${styles.letterSpacing({spacing:'.1rem'})} */
 }
 .subtitle{
     color:${styles.colors.mainWhite};
