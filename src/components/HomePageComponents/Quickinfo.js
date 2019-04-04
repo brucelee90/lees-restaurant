@@ -8,13 +8,13 @@ export default class Quickinfo extends Component {
   render() {
     return (
       <Section>
-        <Title title="let us tell you" subtitle="our mission"/>
+        <Title title="Lee's" subtitle="BEEF BURGER, FRIES & SHAKES"/>
         <QuickinfoWrapper>
           <p className="text">
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolores recusandae odit atque accusantium asperiores natus commodi, consequatur vero totam corporis et fugit placeat, harum voluptatem quam, nisi saepe. Animi omnis, accusantium optio fuga sunt hic, tenetur ipsam provident aspernatur eos ut est praesentium. Voluptatibus, maiores. Nulla praesentium expedita necessitatibus?
+Bei Lee's Inn findet ihr die besten und frischesten Burger der Stadt. Wir wolfen unser Fleisch jeden Tag frisch bei uns und produzieren unsere Patties selbst in den Stores. Wir verwenden keinerlei vorgefertigte oder tiefgefrorene Produkte. Unsere Buns werden jeden Tag frisch bei uns und von uns selbst gebacken. Wir verwenden ausschliesslich Zutaten von regionalen Anbieter die wir persönlich kennen....
           </p>
           <Link to="/about" style={{textDecoration:'none'}} >
-            <SectionButton style={{margin: '2rem auto'}} >About</SectionButton>
+            <SectionButton style={{margin: '2rem auto'}} >Mehr</SectionButton>
           </Link>
         </QuickinfoWrapper>
       </Section>

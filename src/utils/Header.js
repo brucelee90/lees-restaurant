@@ -28,7 +28,7 @@ justify-content: center;
 align-items: center;
 `
 const DefaultHeader = styled(IndexHeader)`
-min-height: 60vh;
+min-height: calc(100vh - 60px);
 `
 
 // Falls props nicht korrekt übergeben werden, wird immer dieses standard Bild ausgegeben

@@ -20,14 +20,14 @@ text-align:center;
     color:${styles.colors.mainWhite};
     font-size: 2.5rem;
     text-transform:uppercase;
-    ${styles.letterSpacing({spacing:'.4rem'})}
+    ${styles.letterSpacing({spacing:'.2rem'})}
 }
 .subtitle{
     color:${styles.colors.mainWhite};
     font-weight: 300;
     font-size: 1.4rem;
     ${styles.textSlanted}
-    ${styles.letterSpacing({spacing:'.2rem'})};
+    ${styles.letterSpacing({spacing:'.1rem'})};
     text-transform:capitalize;
 }
 `

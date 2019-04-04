@@ -1,6 +1,7 @@
 export const colors = {
     mainBlack: `#262626`,
     mainWhite: `#fff`,
+    mainGrey: `#aaa`,
     primaryRGBA: `rgb(210, 170, 92, 0.3)`,
     primaryColor: `#d2aa5c`,
     primaryColorHover: `#ad7913`,
@@ -9,7 +10,7 @@ export const colors = {
     visitedColor: `red`,
     
     }
-export const textSlanted = `font-family:'Caveat', cursive;`
+export const textSlanted = `font-family: 'Kaushan Script', cursive;`
 
 export const transDefault = 'all 0.2s ease-in-out'
 export const navPadding  = '0.4rem 1.8rem'

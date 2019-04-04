@@ -7,15 +7,18 @@ import img from '../images/bcg/homeBcg.jpeg'
 import Quickinfo from '../components/HomePageComponents/Quickinfo'
 import Menu from '../components/HomePageComponents/Menu'
 import Gallery from '../components/HomePageComponents/Gallery_new'
+import {Link} from 'gatsby'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <HomeHeader img={img}>
-      <Banner title="LEE'S INN" subtitle="Gnesener Str. 97, 70374">
+      <Banner title="Lee's Inn" subtitle="Gnesener Str. 97, 70374">
+      <Link to="/menu" style={{textDecoration:'none'}} >
         <BannerButton style={{margin:'2rem auto'}}>
           Karte
         </BannerButton>
+        </Link>
       </Banner>
     </HomeHeader>
     <Quickinfo/>

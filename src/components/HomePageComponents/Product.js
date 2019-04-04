@@ -8,16 +8,19 @@ import Img from 'gatsby-image'
 export default function Product({product}) {
   const {name, preis, zutaten} = product
   const {fixed} = product.img
-  console.log(product);
+  console.log(product.preis)
   
   return (
     <ProductWrapper>
       <Img fixed={fixed} className="img"/>
       <div className="text">
         <div className="product-content">
-          <h3 className="name">{name}</h3>
-          <h3 className="preis">{preis}</h3>
+          <h4 className="name">{name}</h4>
+          <h4 className="preis">{preis.toFixed(2)} €</h4>
         </div>
+        <p className="allergene">
+          Allergene:
+        </p>
         <p className="info">{zutaten}</p>
       </div>
     </ProductWrapper>
@@ -43,14 +46,27 @@ const ProductWrapper = styled.div `
 .name{
   color: ${styles.colors.primaryColor};
   margin-top: .5rem;
+  font-weight: 400;
 }
 
 .preis{
-  color: ${styles.colors.primaryColor};
+  color: ${styles.colors.mainBlack};
+  font-weight: 600;
+  font-size: 1.2rem;
+
+}
+.allergene{
+  margin-top: .3rem;
+  word-spacing: .2rem;
+  text-transform: capitalize;
+  font-size: .8rem;
+  color: ${styles.colors.mainBlack};
 }
 .info{
-  margin-top: .5rem;
+  /* margin-top: .5rem; */
   word-spacing: .2rem;
-  text-transform: lowercase;
+  text-transform: capitalize;
+  font-size: .8rem;
+  color: ${styles.colors.mainGrey};
 }
 `
